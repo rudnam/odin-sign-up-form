@@ -1,2 +1,5 @@
 # odin-sign-up-form
-The Odin Project: Sign-up Form
+#### Link: https://rudnam.github.io/odin-sign-up-form/
+## Description
+Project from [TOP](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+- Form practice
