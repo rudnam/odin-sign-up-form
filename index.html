@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
-    <h1>Sign-up form</h1>
+    <main>
+        <div class="background">
+            <div class="logo">
+                <img src="assets/odin-logo.png" alt="">
+                <span>ODIN</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <p>This is not a real online service! You know you need something like this 
+                    in your life to help you realize your deepest dreams. 
+                </p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <br>
+                <p>You <em>know</em> you want to.</p>
+                <br>
+            </div>
+            <div class="form">
+                <p>Let's do this!</p>
+                <form id="myform" method="post" action="">
+                    <ul>
+                        <li>
+                            <label for="first-name">FIRST NAME</label>
+                            <input required type="text" name="first-name" id="first-name" value="Thor">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input required type="email" name="email" id="email">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input required type="password" name="password" id="password">
+                            <p id="error-msg" hidden>* Passwords do not match</p>
+                        </li>
+                        <li>
+                            <label for="last-name">LAST NAME</label>
+                            <input required type="text" name="last-name" id="last-name" value="Odinson" autofocus>
+                        </li>
+                        <li>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input required type="tel" name="phone-number" id="phone-number">
+                        </li>
+                        <li>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input required type="password" name="confirm-password" id="confirm-password">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="misc">
+                <button type="submit" form="myform">
+                    Create account
+                </button>
+                <p class="login">Already have an account? <a href="">Log In</a></p>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
